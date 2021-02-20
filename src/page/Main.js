@@ -17,7 +17,6 @@ class Main extends React.Component {
     }
 
     changeLocale = (e) => {
-        console.log('e', e);
         const value = e.target.value;
         console.log('value', value);
         this.setState({locale: value})
