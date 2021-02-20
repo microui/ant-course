@@ -116,6 +116,7 @@ class App extends React.Component {
 
     changeLocale = e => {
         const localeValue = e.target.value;
+        console.log('localeValue',localeValue);
         this.setState({ locale: localeValue });
         if (!localeValue) {
             moment.locale('en');
